@@ -1,0 +1,82 @@
+<ui:composition 
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
+                >
+<nav class="navbar navbar-expand-xl navbar-dark bg-light">
+
+    <!-- BOTAO QUE ACIONA O MENU -->
+    <button type="button" id="sidebarCollapse" class="btn btn-light   navbar-brand text-dark">
+        <i class="fa fa-align-justify" title="Align Center"></i>
+    </button>
+
+
+    <!-- ITENS DO NAVBAR -->
+    <div class="collapse navbar-collapse " id="navbarSite">
+        <ul class="navbar-nav ml-auto ">
+
+            <!-- BOTAO ALERTA -->
+
+            <li class="nav-item dropdown mt-1 ">
+                <div id="ex4">
+                    <div class="btn-group dropleft">
+                        <button class="btn btn-link text-dark"
+                                type="button" id="dropdownSite1" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                            <span class="p1 fa-stack fa-2x has-badge" data-count="4">
+
+                                                <i class="p3 fa fa-bell fa-stack-1x xfa-inverse" data-count="4b"></i>
+                                            </span>
+                        </button>
+                        <div class="dropdown-menu">
+
+
+                            <a class="dropdown-item text-dark" href="#">
+                                <label>Chamado 01</label>
+                                <p>chamadochamadochamad</p>
+
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-dark" href="#">
+                                <label>Chamado 01</label>
+                                <p>chamadochamadochamad</p>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-dark" href="#">
+                                <label>Chamado 01</label>
+                                <p>chamadochamadochamad</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="nav-item dropdown mt-3 ">
+                <div class="btn-group dropleft">
+
+                    <button class="btn btn-link text-dark  "
+                            type="button" id="dropdownSite" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-user-circle fa-2x"></i>
+                        <label>Paulo</label>
+                    </button>
+
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item text-dark" href="#">produto</a>
+                        <div class="dropdown-divider"></div>
+                        <a class=" text-dark" href="#">produto</a>
+                        <a class="dropdown-item text-dark" href="#">produto</a>
+                        <a class="dropdown-item text-dark" href="#">produto</a>
+                    </div>
+                </div>
+
+
+            </li>
+
+        </ul>
+    </div>
+</nav>
+    </ui:composition>

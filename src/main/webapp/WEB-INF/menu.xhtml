@@ -1,0 +1,110 @@
+<ui:composition 
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
+                >
+
+<nav id="sidebar">
+    <!-- Sidebar Header -->
+
+    <div class="sidebar-header text-light">
+        <h3>Pro Chamado</h3>
+        <strong style="margin: 2px">PC</strong>
+    </div>
+    <!-- MENU -->
+    <ul class="list-unstyled components text-light">
+        <li class="active">
+
+            <a href="#">
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <label>Inicio</label>
+            </a>
+        </li>
+        <li>
+            <a href="#pageSubmenuServico" data-toggle="collapse">
+                <i class="fas fa-server"></i>
+                <label>Seviço</label>
+            </a>
+            <ul class="collapse list-unstyled" id="pageSubmenuServico">
+                <li><a href="#"><label>Nagios</label></a></li>
+                <li><a href="#"><label>Noticia</label></a></li>
+                <li><a href="#"><label>Ramal</label></a></li>
+
+            </ul>
+        </li>
+        <li>
+            <a href="#">
+                <i class="fa fa-list-alt" aria-hidden="true"></i>
+                <label>Chamado</label>
+            </a>
+        </li>
+        <li>
+            <a href="#pageSubmenuCadastro" data-toggle="collapse">
+                <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                <label>Cadastro</label>
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <ul class="collapse list-unstyled" id="pageSubmenuCadastro">
+                <li><a href="#"><label>Cliente</label></a></li>
+                <li><a href="#"><label>Embarcação</label></a></li>
+                <li><a href="#"><label>Equipamento</label></a></li>
+                <li><a href="#"><label>Fornecedor</label></a></li>
+                <li><a href="#"><label>Itens</label></a></li>
+                <li><a href="#"><label>Loja</label></a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#pageSubmenuRequerimento" data-toggle="collapse">
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <label>Requerimento</label>
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <ul class="collapse list-unstyled" id="pageSubmenuRequerimento">
+                <li><a href="#"><label>Livro de Ocorrência</label></a></li>
+                <li><a href="#"><label>Requerente</label></a></li>
+
+            </ul>
+        </li>
+        <li>
+            <a href="#pageSubmenuSistema" data-toggle="collapse">
+                <i class="fa fa-desktop" aria-hidden="true"></i>
+                <label>Sistema</label>
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <ul class="collapse list-unstyled" id="pageSubmenuSistema">
+                <li><a href="#"><label>Departamento</label></a></li>
+                <li><a href="#"><label>Grupo de Equipamento</label></a></li>
+
+                <li><a href="#pageSubmenuParametro" data-toggle="collapse">
+                    <label>Parametro</label>
+                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                </a>
+
+                    <ul class="collapse list-unstyled" id="pageSubmenuParametro">
+                        <li><a href="#"><label>Campo</label></a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><label>Perfil</label></a></li>
+                <li><a href="#"><label>Status</label></a></li>
+                <li><a href="#"><label>Unidade</label></a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">
+                <i class="fa fa-file-pdf" aria-hidden="true"></i>
+                <label>Relatorio</label>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+
+                <i class="fas fa-chart-pie"></i>
+                <label>Grafico</label>
+            </a>
+        </li>
+    </ul>
+</nav>
+</ui:composition>

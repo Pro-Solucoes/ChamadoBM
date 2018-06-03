@@ -1,0 +1,358 @@
+<ui:composition template="../../WEB-INF/template.xhtml"
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
+                >
+
+    <ui:define name="corpo">    
+
+        <div class="container" style="background-color: #EFEFEF">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="offer offer-radius offer-danger">
+                        <div class="shape">
+                            <div class="shape-text">
+                                <i class="fas fa-bell"></i>
+                            </div>
+                        </div>
+                        <div class="offer-content">
+                            <h3 class="lead">
+                                <h4 class="display-6">ATRASADO</h4>
+
+                            </h3>
+                            <p>
+                                <h6>
+                                    Você tem 1 chamado em atraso
+                                </h6>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="offer offer-radius offer-warning">
+                        <div class="shape">
+                            <div class="shape-text">
+                                <i class="fas fa-bell"></i>
+                            </div>
+                        </div>
+                        <div class="offer-content">
+                            <h3 class="lead">
+                                <h4 class="display-6">PRIORIDADE</h4>
+                            </h3>
+                            <p><h6>
+                                    Você tem 2 chamado com prioridade
+                                </h6>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="offer offer-radius offer-primary">
+                        <div class="shape">
+                            <div class="shape-text">
+                                <i class="fas fa-bell"></i>
+                            </div>
+                        </div>
+                        <div class="offer-content">
+                            <h3 class="lead">
+                                <h4 class="display-6">COMUM</h4>
+                            </h3>
+                            <p>
+                                <h6>
+                                    Você tem 10 chamados comuns
+                                </h6>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="offer offer-radius offer-success">
+                        <div class="shape">
+                            <div class="shape-text">
+                                <i class="fas fa-bell"></i>
+                            </div>
+                        </div>
+                        <div class="offer-content">
+                            <h3 class="lead">
+                                <h4 class="display-6">ATENDIDO</h4>
+                            </h3>
+                            <p><h6>
+                                    Você tem 53 chamados atendidos
+                                </h6>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row conteudo">
+                <div class="col-sm-6">
+                    <div class="container efeito">
+                        <div class="row">
+                            <div class=" col-sm-6">
+                                <h2>Noticia</h2>
+                            </div>
+                            <div class=" col-sm-6">
+                            
+                                <button type="button" style="position: absolute;right: 5% ;"
+                                        data-target="#exampleModal"
+                                        data-toggle="modal"  
+                                        class="btn btn-primary btn-lg btn3d">
+                                    <i class="fas fa-plus-circle"></i>
+
+                                </button>
+                            </div>
+                            <ui:include src="form.xhtml"/>
+
+                            <div class=" col-sm-12 conteudo">
+                                <div id="cardNoticia" class="carousel slide" data-ride="carousel">
+                                    <div class="carousel-inner">
+
+
+
+                                        <div class="carousel-item active">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Titulo da  2</h4>
+                                                    <p class="card-text">
+                                                        aqui vem o texto da noticia
+                                                    </p>
+                                                </div>
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item"><h5>Data de Publicação: 30/05/2018</h5></li>
+                                                    <li class="list-group-item"><h5>Data de Finalização: 05/06/2018</h5></li>
+                                                    <li class="list-group-item"><h5>Autor: Paulo</h5></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <!-- ELSE -->
+
+                                        <div class="carousel-item">
+                                            <div class="card">
+
+                                                <div class="card-body">
+                                                    <h4 class="card-title"> da Noticia 3</h4>
+                                                    <p class="card-text">
+                                                        aqui vem o texto da noticia
+                                                    </p>
+                                                </div>
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item"><h5>Data de Publicação: 30/05/2018</h5></li>
+                                                    <li class="list-group-item"><h5>Data de Finalização: 05/06/2018</h5></li>
+                                                    <li class="list-group-item"><h5>Autor: Paulo</h5></li>
+                                                </ul>
+
+                                            </div>
+                                        </div>
+
+
+
+
+
+                                    </div>
+                                    <a class="carousel-control-prev" href="#cardNoticia" role="button"
+                                       data-slide="prev">
+                                        <i class="fas fa-chevron-right"></i>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#cardNoticia" role="button"
+                                       data-slide="next">
+                                        <i class="fas fa-chevron-right"></i>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                    <a class="carousel-control-prev" href="#cardNoticia" role="button" data-slide="prev">
+                                        <i class="fas fa-chevron-left"></i>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#cardNoticia" role="button" data-slide="next">
+                                        <i class="fas fa-chevron-left"></i>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="container efeito">
+                        <div class="row">
+                            <div class=" col-sm-6">
+                                <h2>Tarefas</h2>
+                            </div>
+                            <div class=" col-sm-6">
+                                <button type="button" style="position: absolute;right: 5% ;"
+                                        class="btn btn-primary btn-lg btn3d">
+                                    <i class="fas fa-plus-circle"></i>
+                                </button>
+                            </div>
+
+                            <div class=" col-sm-12 conteudo">
+
+                                <ul class="list-group scrollbar" id="style-7" style="height: 282px; overflow: auto ">
+                                    <div class="force-overflow">
+                                        <li class="list-group-item">
+                                            <div class="checkbox checkbox-success">
+                                                <input id="checkbox1" type="checkbox"/>
+                                                <label for="checkbox1">
+                                                    Success
+                                                </label>
+                                                <div class="task-data">
+                                                    <samp class="text-muted">10 de julho de 2018</samp>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="checkbox checkbox-success">
+                                                <input id="checkbox2" type="checkbox"/>
+                                                <label for="checkbox2">
+                                                    Success
+                                                </label>
+                                                <div class="task-data">
+                                                    <samp class="text-muted">10 de julho de 2018</samp>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="checkbox checkbox-success">
+                                                <input id="checkbox3" type="checkbox"/>
+                                                <label for="checkbox3">
+                                                    Success
+                                                </label>
+                                                <div class="task-data">
+                                                    <samp class="text-muted">10 de julho de 2018</samp>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="checkbox checkbox-success">
+                                                <input id="checkbox4" type="checkbox"/>
+                                                <label for="checkbox4">
+                                                    Success
+                                                </label>
+                                                <div class="task-data">
+                                                    <samp class="text-muted">10 de julho de 2018</samp>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="checkbox checkbox-success">
+                                                <input id="checkbox5" type="checkbox"/>
+                                                <label for="checkbox5">
+                                                    Success
+                                                </label>
+                                                <div class="task-data">
+                                                    <samp class="text-muted">10 de julho de 2018</samp>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="checkbox checkbox-success">
+                                                <input id="checkbox6" type="checkbox"/>
+                                                <label for="checkbox6">
+                                                    Success
+                                                </label>
+                                                <div class="task-data">
+                                                    <samp class="text-muted">10 de julho de 2018</samp>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </div>
+
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row conteudo">
+                <div class="col-sm-12">
+                    <div class="container efeito">
+                        <div class="col-sm-12">
+                            <ul class="event-list">
+                                <li>
+                                    <time datetime="2014-07-20">
+                                        <span class="day">1</span>
+                                        <span class="month">Jan</span>
+                                        <span class="year">2018</span>
+                                        <span class="time">ALL DAY</span>
+                                    </time>
+                                    <img alt="Independence Day"
+                                         src="https://farm4.staticflickr.com/3100/2693171833_3545fb852c_q.jpg"/>
+                                    <div class="info">
+                                        <h2 class="title">Ano Novo</h2>
+                                        <p class="desc">Feriado</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <time datetime="2014-07-20 2000">
+                                        <span class="day">20</span>
+                                        <span class="month">Jan</span>
+                                        <span class="year">2014</span>
+                                        <span class="time">8:00 PM</span>
+                                    </time>
+                                    <img alt="My 24th Birthday!"
+                                         src="https://farm5.staticflickr.com/4150/5045502202_1d867c8a41_q.jpg"/>
+                                    <div class="info">
+                                        <h2 class="title">Aniverssario de Fulana</h2>
+                                        <p class="desc">Parabéns Fulana pelo seu dia</p>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <time datetime="2014-07-20 0000">
+                                        <span class="day">31</span>
+                                        <span class="month">Mai</span>
+                                        <span class="year">2018</span>
+                                        <span class="time">12:00 AM</span>
+                                    </time>
+                                    <div class="info">
+                                        <h2 class="title">Corpus Christi</h2>
+                                        <p class="desc">Feriado Nacional</p>
+
+                                    </div>
+
+                                </li>
+
+
+                                <li>
+                                    <time datetime="2014-07-31 1600">
+                                        <span class="day">25</span>
+                                        <span class="month">Dez</span>
+                                        <span class="year">2018</span>
+                                        <span class="time">4:00 PM</span>
+                                    </time>
+
+                                    <div class="info">
+                                        <h2 class="title">Natal</h2>
+                                        <p class="desc"> Feriado</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            $(document).ready(function () {
+                $('#media').carousel({
+                    pause: true,
+                    interval: false,
+                });
+
+                if (!$.browser.webkit) {
+                    $('.wrapper').html('<p>Sorry! Non webkit users. :(</p>');
+                }
+            });
+        </script>
+    </ui:define>    
+</ui:composition>

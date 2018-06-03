@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+              integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+              integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"/>
+        <link rel="stylesheet" type="text/css" href="resources/css/estilo.css"/>
+        <link rel="stylesheet" type="text/css" href="resources/css/menu.css"/>
+        <link rel="stylesheet" type="text/css" href="resources/css/box-alerta"/>
+        <link rel="stylesheet" type="text/css" href="resources/css/box-alerta.css"/>
+        <link rel="stylesheet" type="text/css" href="resources/css/checkbox.css"/>
+        <link rel="stylesheet" type="text/css" href="resources/css/estilo.css"/>
+        <link rel="stylesheet" type="text/css" href="resources/css/evento.css"/>
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css"/>
+        <style>
+            .text-muted {
+                color: #999 !important;
+            }
+
+            .text-muted {
+                color: #868e96 !important;
+            }
+
+            small {
+                font-size: 85%;
+            }
+
+            .small, small {
+                font-size: 80%;
+                font-weight: 400;
+            }
+
+            small {
+                font-size: 80%;
+            }
+
+            user agent stylesheet
+            small {
+                font-size: smaller;
+            }
+
+            .tasks-list .task-data {
+                padding-left: 25px;
+            }
+
+        </style>
+        <title>Facelets Template2</title>
+
+
+    </head>
+
+    <body>
+        <div class="wrapper" >
+            <!-- MENU -->
+            <nav id="sidebar">
+                <!-- Sidebar Header -->
+
+                <div class="sidebar-header text-light">
+                    <h3>Pro Chamado</h3>
+                    <strong style="margin: 2px">PC</strong>
+                </div>
+                <!-- MENU -->
+                <ul class="list-unstyled components text-light">
+                    <li class="active">
+
+                        <a href="#">
+                            <i class="fa fa-home" aria-hidden="true"></i>
+                            <label>Inicio</label>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#pageSubmenuServico" data-toggle="collapse">
+                            <i class="fas fa-server"></i>
+                            <label>Seviço</label>
+                        </a>
+                        <ul class="collapse list-unstyled" id="pageSubmenuServico">
+                            <li><a href="#"><label>Nagios</label></a></li>
+                            <li><a href="#"><label>Noticia</label></a></li>
+                            <li><a href="#"><label>Ramal</label></a></li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-list-alt" aria-hidden="true"></i>
+                            <label>Chamado</label>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#pageSubmenuCadastro" data-toggle="collapse">
+                            <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                            <label>Cadastro</label>
+                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                        </a>
+                        <ul class="collapse list-unstyled" id="pageSubmenuCadastro">
+                            <li><a href="#"><label>Cliente</label></a></li>
+                            <li><a href="#"><label>Embarcação</label></a></li>
+                            <li><a href="#"><label>Equipamento</label></a></li>
+                            <li><a href="#"><label>Fornecedor</label></a></li>
+                            <li><a href="#"><label>Itens</label></a></li>
+                            <li><a href="#"><label>Loja</label></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#pageSubmenuRequerimento" data-toggle="collapse">
+                            <i class="fa fa-book" aria-hidden="true"></i>
+                            <label>Requerimento</label>
+                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                        </a>
+                        <ul class="collapse list-unstyled" id="pageSubmenuRequerimento">
+                            <li><a href="#"><label>Livro de Ocorrência</label></a></li>
+                            <li><a href="#"><label>Requerente</label></a></li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#pageSubmenuSistema" data-toggle="collapse">
+                            <i class="fa fa-desktop" aria-hidden="true"></i>
+                            <label>Sistema</label>
+                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                        </a>
+                        <ul class="collapse list-unstyled" id="pageSubmenuSistema">
+                            <li><a href="#"><label>Departamento</label></a></li>
+                            <li><a href="#"><label>Grupo de Equipamento</label></a></li>
+
+                            <li><a href="#pageSubmenuParametro" data-toggle="collapse">
+                                    <label>Parametro</label>
+                                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                </a>
+
+                                <ul class="collapse list-unstyled" id="pageSubmenuParametro">
+                                    <li><a href="#"><label>Campo</label></a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#"><label>Perfil</label></a></li>
+                            <li><a href="#"><label>Status</label></a></li>
+                            <li><a href="#"><label>Unidade</label></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-file-pdf" aria-hidden="true"></i>
+                            <label>Relatorio</label>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+
+                            <i class="fas fa-chart-pie"></i>
+                            <label>Grafico</label>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- CONTAINER -->
+            <div class="container-fluid" style="background-color: #EFEFEF;padding-bottom: 100px">
+                <nav class="navbar navbar-expand-xl navbar-dark bg-light">
+
+                    <!-- BOTAO QUE ACIONA O MENU -->
+                    <button type="button" id="sidebarCollapse" class="btn btn-light   navbar-brand text-dark">
+                        <i class="fa fa-align-justify" title="Align Center"></i>
+                    </button>
+
+
+                    <!-- ITENS DO NAVBAR -->
+                    <div class="collapse navbar-collapse " id="navbarSite">
+                        <ul class="navbar-nav ml-auto ">
+
+                            <!-- BOTAO ALERTA -->
+
+                            <li class="nav-item dropdown mt-1 ">
+                                <div id="ex4">
+                                    <div class="btn-group dropleft">
+                                        <button class="btn btn-link text-dark"
+                                                type="button" id="dropdownSite1" data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">
+                                            <span class="p1 fa-stack fa-2x has-badge" data-count="4">
+
+                                                <i class="p3 fa fa-bell fa-stack-1x xfa-inverse" data-count="4b"></i>
+                                            </span>
+                                        </button>
+                                        <div class="dropdown-menu">
+
+
+                                            <a class="dropdown-item text-dark" href="#">
+                                                <label>Chamado 01</label>
+                                                <p>chamadochamadochamad</p>
+
+                                            </a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item text-dark" href="#">
+                                                <label>Chamado 01</label>
+                                                <p>chamadochamadochamad</p>
+                                            </a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item text-dark" href="#">
+                                                <label>Chamado 01</label>
+                                                <p>chamadochamadochamad</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="nav-item dropdown mt-3 ">
+                                <div class="btn-group dropleft">
+
+                                    <button class="btn btn-link text-dark  "
+                                            type="button" id="dropdownSite" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                        <i class="fas fa-user-circle fa-2x"></i>
+                                        <label>Paulo</label>
+                                    </button>
+
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item text-dark" href="#">produto</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class=" text-dark" href="#">produto</a>
+                                        <a class="dropdown-item text-dark" href="#">produto</a>
+                                        <a class="dropdown-item text-dark" href="#">produto</a>
+                                    </div>
+                                </div>
+
+
+                            </li>
+
+                        </ul>
+                    </div>
+                </nav>
+
+                <div class="container" style="background-color: #EFEFEF">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="offer offer-radius offer-danger">
+                                <div class="shape">
+                                    <div class="shape-text">
+                                        <i class="fas fa-bell"></i>
+                                    </div>
+                                </div>
+                                <div class="offer-content">
+                                    <h3 class="lead">
+                                        <h4 class="display-6">ATRASADO</h4>
+
+                                    </h3>
+                                    <p>
+                                    <h6>
+                                        Você tem 1 chamado em atraso
+                                    </h6>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="offer offer-radius offer-warning">
+                                <div class="shape">
+                                    <div class="shape-text">
+                                        <i class="fas fa-bell"></i>
+                                    </div>
+                                </div>
+                                <div class="offer-content">
+                                    <h3 class="lead">
+                                        <h4 class="display-6">PRIORIDADE</h4>
+                                    </h3>
+                                    <p><h6>
+                                        Você tem 2 chamado com prioridade
+                                    </h6>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="offer offer-radius offer-primary">
+                                <div class="shape">
+                                    <div class="shape-text">
+                                        <i class="fas fa-bell"></i>
+                                    </div>
+                                </div>
+                                <div class="offer-content">
+                                    <h3 class="lead">
+                                        <h4 class="display-6">COMUM</h4>
+                                    </h3>
+                                    <p>
+                                    <h6>
+                                        Você tem 10 chamados comuns
+                                    </h6>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="offer offer-radius offer-success">
+                                <div class="shape">
+                                    <div class="shape-text">
+                                        <i class="fas fa-bell"></i>
+                                    </div>
+                                </div>
+                                <div class="offer-content">
+                                    <h3 class="lead">
+                                        <h4 class="display-6">ATENDIDO</h4>
+                                    </h3>
+                                    <p><h6>
+                                        Você tem 53 chamados atendidos
+                                    </h6>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row conteudo">
+                        <div class="col-sm-6">
+                            <div class="container efeito">
+                                <div class="row">
+                                    <div class=" col-sm-6">
+                                        <h2>Noticia</h2>
+                                    </div>
+                                    <div class=" col-sm-6">
+                                        <a class="btn btn-sm btn-success" data-toggle="modal"
+                                           data-target=".bd-example-modal-lg">Adicionar</a>
+                                        <button type="button" style="position: absolute;right: 5% ;"
+                                                data-toggle="modal" onclick="/noticiaAdd" data-target=".bd-example-modal-lg"
+                                                class="btn btn-primary btn-lg btn3d">
+                                            <i class="fas fa-plus-circle"></i>
+
+                                        </button>
+                                    </div>
+
+                                    <div class=" col-sm-12 conteudo">
+                                        <div id="cardNoticia" class="carousel slide" data-ride="carousel">
+                                            <div class="carousel-inner">
+
+
+                                                <div class="carousel-item active">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h4 class="card-title">Titulo da  2</h4>
+                                                            <p class="card-text">
+                                                                aqui vem o texto da noticia
+                                                            </p>
+                                                        </div>
+                                                        <ul class="list-group list-group-flush">
+                                                            <li class="list-group-item"><h5>Data de Publicação: 30/05/2018</h5></li>
+                                                            <li class="list-group-item"><h5>Data de Finalização: 05/06/2018</h5></li>
+                                                            <li class="list-group-item"><h5>Autor: Paulo</h5></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <!-- ELSE -->
+
+                                                <div class="carousel-item">
+                                                    <div class="card">
+
+                                                        <div class="card-body">
+                                                            <h4 class="card-title"> da Noticia 3</h4>
+                                                            <p class="card-text">
+                                                                aqui vem o texto da noticia
+                                                            </p>
+                                                        </div>
+                                                        <ul class="list-group list-group-flush">
+                                                            <li class="list-group-item"><h5>Data de Publicação: 30/05/2018</h5></li>
+                                                            <li class="list-group-item"><h5>Data de Finalização: 05/06/2018</h5></li>
+                                                            <li class="list-group-item"><h5>Autor: Paulo</h5></li>
+                                                        </ul>
+
+                                                    </div>
+                                                </div>
+
+
+
+
+
+                                            </div>
+                                            <a class="carousel-control-prev" href="#cardNoticia" role="button"
+                                               data-slide="prev">
+                                                <i class="fas fa-chevron-right"></i>
+                                                <span class="sr-only">Previous</span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#cardNoticia" role="button"
+                                               data-slide="next">
+                                                <i class="fas fa-chevron-right"></i>
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                            <a class="carousel-control-prev" href="#cardNoticia" role="button" data-slide="prev">
+                                                <i class="fas fa-chevron-left"></i>
+                                                <span class="sr-only">Previous</span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#cardNoticia" role="button" data-slide="next">
+                                                <i class="fas fa-chevron-left"></i>
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="container efeito">
+                                <div class="row">
+                                    <div class=" col-sm-6">
+                                        <h2>Tarefas</h2>
+                                    </div>
+                                    <div class=" col-sm-6">
+                                        <button type="button" style="position: absolute;right: 5% ;"
+                                                class="btn btn-primary btn-lg btn3d">
+                                            <i class="fas fa-plus-circle"></i>
+                                        </button>
+                                    </div>
+
+                                    <div class=" col-sm-12 conteudo">
+
+                                        <ul class="list-group scrollbar" id="style-7" style="height: 282px; overflow: auto ">
+                                            <div class="force-overflow">
+                                                <li class="list-group-item">
+                                                    <div class="checkbox checkbox-success">
+                                                        <input id="checkbox1" type="checkbox"/>
+                                                        <label for="checkbox1">
+                                                            Success
+                                                        </label>
+                                                        <div class="task-data">
+                                                            <samp class="text-muted">10 de julho de 2018</samp>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <div class="checkbox checkbox-success">
+                                                        <input id="checkbox2" type="checkbox"/>
+                                                        <label for="checkbox2">
+                                                            Success
+                                                        </label>
+                                                        <div class="task-data">
+                                                            <samp class="text-muted">10 de julho de 2018</samp>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <div class="checkbox checkbox-success">
+                                                        <input id="checkbox3" type="checkbox"/>
+                                                        <label for="checkbox3">
+                                                            Success
+                                                        </label>
+                                                        <div class="task-data">
+                                                            <samp class="text-muted">10 de julho de 2018</samp>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <div class="checkbox checkbox-success">
+                                                        <input id="checkbox4" type="checkbox"/>
+                                                        <label for="checkbox4">
+                                                            Success
+                                                        </label>
+                                                        <div class="task-data">
+                                                            <samp class="text-muted">10 de julho de 2018</samp>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <div class="checkbox checkbox-success">
+                                                        <input id="checkbox5" type="checkbox"/>
+                                                        <label for="checkbox5">
+                                                            Success
+                                                        </label>
+                                                        <div class="task-data">
+                                                            <samp class="text-muted">10 de julho de 2018</samp>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <div class="checkbox checkbox-success">
+                                                        <input id="checkbox6" type="checkbox"/>
+                                                        <label for="checkbox6">
+                                                            Success
+                                                        </label>
+                                                        <div class="task-data">
+                                                            <samp class="text-muted">10 de julho de 2018</samp>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </div>
+
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row conteudo">
+                        <div class="col-sm-12">
+                            <div class="container efeito">
+                                <div class="col-sm-12">
+                                    <ul class="event-list">
+                                        <li>
+                                            <time datetime="2014-07-20">
+                                                <span class="day">1</span>
+                                                <span class="month">Jan</span>
+                                                <span class="year">2018</span>
+                                                <span class="time">ALL DAY</span>
+                                            </time>
+                                            <img alt="Independence Day"
+                                                 src="https://farm4.staticflickr.com/3100/2693171833_3545fb852c_q.jpg"/>
+                                            <div class="info">
+                                                <h2 class="title">Ano Novo</h2>
+                                                <p class="desc">Feriado</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <time datetime="2014-07-20 2000">
+                                                <span class="day">20</span>
+                                                <span class="month">Jan</span>
+                                                <span class="year">2014</span>
+                                                <span class="time">8:00 PM</span>
+                                            </time>
+                                            <img alt="My 24th Birthday!"
+                                                 src="https://farm5.staticflickr.com/4150/5045502202_1d867c8a41_q.jpg"/>
+                                            <div class="info">
+                                                <h2 class="title">Aniverssario de Fulana</h2>
+                                                <p class="desc">Parabéns Fulana pelo seu dia</p>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <time datetime="2014-07-20 0000">
+                                                <span class="day">31</span>
+                                                <span class="month">Mai</span>
+                                                <span class="year">2018</span>
+                                                <span class="time">12:00 AM</span>
+                                            </time>
+                                            <div class="info">
+                                                <h2 class="title">Corpus Christi</h2>
+                                                <p class="desc">Feriado Nacional</p>
+
+                                            </div>
+
+                                        </li>
+
+
+                                        <li>
+                                            <time datetime="2014-07-31 1600">
+                                                <span class="day">25</span>
+                                                <span class="month">Dez</span>
+                                                <span class="year">2018</span>
+                                                <span class="time">4:00 PM</span>
+                                            </time>
+
+                                            <div class="info">
+                                                <h2 class="title">Natal</h2>
+                                                <p class="desc"> Feriado</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+            integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+    crossorigin="anonymous"></script>
+
+    <script>
+                                                    $(document).ready(function () {
+                                                        $('#media').carousel({
+                                                            pause: true,
+                                                            interval: false,
+                                                        });
+
+                                                        if (!$.browser.webkit) {
+                                                            $('.wrapper').html('<p>Sorry! Non webkit users. :(</p>');
+                                                        }
+                                                    });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(function () {
+
+                $('[data-toggle="popover"]').popover()
+
+            })
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+
+        });
+
+
+    </script>
+</html>
+
+
+
+
+
+
